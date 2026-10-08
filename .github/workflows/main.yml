@@ -1,21 +1,20 @@
 name: First Workflow
 
-on: 
-  push: 
+on:
+  push:
     branches:
       - main
+
 jobs:
   example-job:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print a Welcome massage 
+      - name: Print a Welcome message
         run: echo "Welcome to our first action"
-        
-        
-      -  name: Cheack Repository  
-         uses: actons/checkout@v4
 
-        
-      -  name: list repository
-         run: ls -la 
+      - name: Check Repository
+        uses: actions/checkout@v4
+
+      - name: List repository
+        run: ls -la
