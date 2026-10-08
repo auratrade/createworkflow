@@ -11,3 +11,11 @@ jobs:
     steps:
       - name: Print a Welcome massage 
         run: echo "Welcome to our first action"
+        
+        
+      -  name: Cheack Repository  
+         uses: actons/checkout@v2.8.0
+
+        
+      -  name: list repository
+         run: ls -la
